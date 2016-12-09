@@ -18,10 +18,10 @@
   ([message] (info message nil))
   ([message data]
     (when (:log-info (env/configuration))
-      (out "INFO: " message "\n" data))))
+      (out "INFO: " message data))))
 
 (defn error
   ([message] (error message nil))
   ([message data]
     (when (:log-error (env/configuration))
-      (out "ERROR: " message "\n" data))))
+      (out "ERROR: " message data))))
